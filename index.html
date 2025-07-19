@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Portfolio</title>
+</head>
+
+<body>
+    <div class="particulas"></div>
+
+    <nav class="navegacao">
+        <ul class="menu">
+
+            <li>
+                <a href="#inicio" class="menu-link">Home</a>
+            </li>
+
+            <li>
+                <a href="#sobre" class="menu-link">About</a>
+            </li>
+
+            <li>
+                <a href="#projetos" class="menu-link">Projects</a>
+            </li>
+
+            <li>
+                <a href="#contatos" class="menu-link">Contacts</a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+            <img src="./img/IMG_6044.jpg" alt="Photo by Álisson Siqueira" class="foto-perfil">
+            <h1>Álisson Siqueira</h1>
+            <p class="cabecalho-sub-titulo">Web Developer</p>
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">About Me</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">
+            Software developer, I started studying software develoment in 2018 in course, after that, I started my graduation in 
+            Computer Science, I have experience in Web Development, the beginning of my career was as Front-end Development
+            Intern, currently I'm Freelancer Web Developer, the main skils are: React JS, Python, MySQL
+            Database and creating web applications that integrate Front-end, Back-end and Database, 
+            I'm a Bachelor in Computer Science and always improving my skills with ease in quickly
+            learning new tools when needed. I also studied English for years in an English school and I have
+            the MET(Michigan English Test) level B2(intermediate) certificate.
+            </p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">My Projects</h2>
+        <div class="projetos-caixa">
+
+            <div class="projetos-card">
+
+                <img src="./img/SOS-EDUCACAO-DIGITAL.JPG" alt="Project 1" class="projetos-imagem">
+
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">SOS Digital Education</h3>
+                    <p class="paragrafo-projetos">
+                    SOS Digital Education is a project for a community in Rio de Janeiro with the aim of educating children about 
+                    the dangers of the internet, indexed to the project has the game Interland from Google .
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="projetos-card">
+                <img src="./img/spotify.JPG" alt="Project 2" class="projetos-imagem">
+
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">Spotify Clone</h3>
+                    <p class="paragrafo-projetos">
+                    Immersão Alura front end, Spotify Clone . The main features are: navigation , 
+                    consumption of an API for artist name and image query and responsive layout, properties were consulted on 
+                    the official website of Spotify . Technologies used: HTML, CSS and JS .
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="projetos-card">
+                
+                <img src="./img/game.png" alt="Project 3" class="projetos-imagem">
+
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">Kill the flies</h3>
+                    <p class="paragrafo-projetos">
+                    Game in Javascript, to beat the player kill the flies before time runs out , the
+                    game has the beginner levels , intermediate and advanced .
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contatos" class="contatos">
+        <h2 class="contatos-titulo">Contacts</h2>
+        <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+            <div class="grupo-form">
+                <input placeholder="Developed by Álisson Siqueira Ruela !" class="campo-form" id="nome">
+            </div>
+            <div class="grupo-form">
+
+                <textarea class="campo-form" placeholder="For more information about my job, send me a message on WhatsApp or Linkedin and some code projects are available on Github ." rows="6" id="mensagem"></textarea>
+                
+                <button type="submit" class="botao-form">Whats App</button>
+
+            </div>
+        </form>
+
+        <div class="social-links">
+            <a href="https://github.com/AlissonSiqueira-dev" target="_blank" class="social-link">
+                <svg class="github-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+            </a>
+  
+            <a href="https://www.linkedin.com/in/alisson-siqueira-6a9943163/" target="_blank" class="social-link">
+                <svg class="linkedin-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+            </a>
+        </div>
+
+    </section>
+
+    <div id="container-rodape" style="clear: both;">
+        <div id="rodape">
+            &copy; Copyright 2025  |  Making the world a better place ✌️
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
